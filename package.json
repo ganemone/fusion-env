@@ -1,0 +1,30 @@
+{
+  "name": "fusion-env",
+  "description": "A utility for loading fusion environment variables",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "fusionjs/fusion-env",
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.17.0",
+    "eslint-config-fusion": "^1.0.0",
+    "eslint-plugin-cup": "^1.0.0",
+    "eslint-plugin-flowtype": "^2.42.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "nyc": "^11.4.1",
+    "prettier": "1.11.1",
+    "tape": "^4.9.0"
+  },
+  "scripts": {
+    "lint": "eslint . --ignore-path .gitignore",
+    "test": "node test/index.js",
+    "cover": "nyc --reporter=html yarn test",
+    "view-cover": "yarn cover && open coverage/index.html"
+  },
+  "engines": {
+    "node": ">= 8.9.0"
+  }
+}
